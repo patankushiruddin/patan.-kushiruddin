@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kushiruddin Patan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+  <div class="neon-bg"></div>
+
+  <!-- Floating Menu -->
+  <div class="menu-container">
+    <div class="hamburger" id="hamburger">
+      <div></div><div></div><div></div>
+    </div>
+    <div class="menu" id="menu">
+      <button id="editBtn">✏️ Edit Profile</button>
+      <button id="saveBtn">💾 Save Changes</button>
+      <button id="resetBtn">♻️ Reset</button>
+      <button id="downloadBtn">⬇️ Download PDF</button>
+      <button id="changeBgBtn">🎨 Change Background</button>
+      <button id="changeProfileBtn">🖼️ Change Profile Image</button>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Kushiruddin Patan</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Portfolio Content -->
+  <div id="portfolioContent">
+    <header>
+      <div class="profile-img" id="profileContainer">
+        <img id="profilePhoto" src="profile.jpg" alt="Profile Photo">
+        <input type="file" id="imageUpload" accept="image/*" style="display:none;">
+      </div>
+      <h1 class="editable" data-key="name">Kushiruddin Patan</h1>
+      <h3 class="editable" data-key="title">Computer Science Student • Python | C | Web Dev</h3>
+      <p class="editable" data-key="subline">Passionate about data structures, web apps and problem solving — second year student</p>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p class="editable" data-key="about">Motivated computer science student with hands-on experience in building small apps and solving algorithmic problems. Comfortable with Python and C; interested in data structures, algorithms, and full-stack web development.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="cards">
+        <div class="card editable" data-key="exp1">
+          <div class="card-header">
+            <div class="card-title">Library Catalog System (Intern)</div>
+            <div class="card-period">Jun 2024 - Aug 2024</div>
+          </div>
+          <div class="card-subtitle">Brain O Vision — Project Work</div>
+          <p>Implemented a dictionary-based book catalog with add/list/search functionality.</p>
+        </div>
+
+        <div class="card editable" data-key="exp2">
+          <div class="card-header">
+            <div class="card-title">Teaching Assistant (Python)</div>
+            <div class="card-period">Jan 2024 - Apr 2024</div>
+          </div>
+          <div class="card-subtitle">College CS Dept</div>
+          <p>Guided first-year students through Python basics, control flow, and small projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="cards">
+        <div class="card editable" data-key="edu1">
+          <div class="card-header">
+            <div class="card-title">B.Sc. (Computer Science)</div>
+            <div class="card-period">2023 - Present</div>
+          </div>
+          <div class="card-subtitle">Your College Name</div>
+        </div>
+        <div class="card editable" data-key="edu2">
+          <div class="card-header">
+            <div class="card-title">Higher Secondary (Science)</div>
+            <div class="card-period">2021 - 2023</div>
+          </div>
+          <div class="card-subtitle">Your School Name</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects & Achievements</h2>
+      <div class="cards">
+        <div class="card editable" data-key="proj1"><p>Prime Number Checker: Optimized primality checks for large inputs.</p></div>
+        <div class="card editable" data-key="proj2"><p>Fibonacci Generator: Memory-efficient generator with iterative approach.</p></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact">
+        <div class="contact-item editable" data-key="contactEmail"><i class="fas fa-envelope"></i><span>kushir@example.com</span></div>
+        <div class="contact-item editable" data-key="contactPhone"><i class="fas fa-phone"></i><span>+91 98XXXXXXXX</span></div>
+        <div class="contact-item editable" data-key="contactLocation"><i class="fas fa-location-dot"></i><span>City, State, India</span></div>
+        <div class="contact-item editable" data-key="contactLinkedin"><i class="fab fa-linkedin"></i><span>linkedin.com/in/kushir</span></div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Kushiruddin Patan | Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
